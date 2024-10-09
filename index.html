@@ -1,0 +1,62 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória LearnWG Português</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonte do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LearnWG - Jogo da Memória - português</h1>
+            <p>Combine o emoji com sua palavra!</p>
+            <div class="scoreboard">
+                <span>Nível: <span id="level">1</span></span>
+                <span>Pontuação: <span id="score">0</span></span>
+                <span>Movimentos: <span id="moves">0</span></span>
+                <span>Tempo: <span id="timer">00:00</span></span>
+                <button id="restart">Reiniciar</button>
+            </div>
+        </header>
+        <main>
+            <div class="game-board" id="game-board">
+                <!-- As cartas serão geradas aqui -->
+            </div>
+            <!-- Modal para Completar o Nível -->
+            <div class="modal" id="level-modal">
+                <div class="modal-content">
+                    <h2>Parabéns!</h2>
+                    <p id="modal-message">Você completou o nível.</p>
+                    <button id="next-level">Próximo Nível</button>
+                    <button id="play-again">Jogar novamente</button>
+                </div>
+            </div>
+            <!-- Modal para Escrever a Palavra -->
+            <div class="modal" id="input-modal">
+                <div class="modal-content">
+                    <h2>Bom trabalho!</h2>
+                    <p>Digite a palavra em português:</p>
+                    <input type="text" id="user-input" placeholder="Digite a palavra aqui">
+                    <button id="submit-input">Confirmar</button>
+                </div>
+            </div>
+            <!-- Modal para Completar o Jogo -->
+            <div class="modal" id="game-complete-modal">
+                <div class="modal-content">
+                    <h2>Jogo Completado!</h2>
+                    <p>Você completou todos os níveis.</p>
+                    <p>Pontuação Total: <span id="final-score">0</span></p>
+                    <button id="restart-game">Reiniciar Jogo</button>
+                </div>
+            </div>
+        </main><br>
+        <footer>
+            <p>Desenvolvido com ❤️ por <a href="https://learnwithgeorge.site" target="_blank">LearnWG</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
