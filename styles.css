@@ -188,6 +188,7 @@ header p {
 
 .modal-content input,
 .modal-content button {
+  font-family: 'Fredoka One', cursive;
     width: 80%;
     padding: 12px;
     margin: 8px 0;
